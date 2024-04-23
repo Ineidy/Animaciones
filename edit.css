@@ -41,7 +41,7 @@
     width:30vw;
     animation-name: nube;
     animation-duration: 20s;
-
+    
 }
 
 @keyframes nube{
@@ -57,8 +57,34 @@
     100%{
         left: -2400px;
     }
+    
+    
+}
+.flor{
+    position:relative;
+    margin-left: 45vw;
+    width: 10vw;
+    margin-top: 90%;
+    animation-delay: 6s;
+    animation-name: flor;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+@keyframes flor{
+    0%{
+        margin-top: 100vw;
 
+    }
+    50%{
+        margin-top: 100vw;
 
+    }
+    75%{
+        margin-top: 50vw;
+    }
+    100%{
+        margin-top: 0;
+    }
 }
 @keyframes sol{
     0%{
@@ -73,4 +99,56 @@
         opacity: 0%;
     }
 
+}
+.lluvia{
+    position: absolute;
+    margin-left: 41vw;
+    animation-name: lluvia;
+    animation-duration: 20s;
+    opacity: 0;
+    margin-top: 7vw;
+    width:17vw;
+}
+
+@keyframes lluvia{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    65%{
+        opacity: 100%;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+h1{
+    position: absolute;
+    animation-name: texto;
+    color: darksalmon;
+    margin-top: 14vw;
+    margin-left: 28vw;
+    opacity: 0;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    font-size: 3vw;
+}
+@keyframes texto{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
