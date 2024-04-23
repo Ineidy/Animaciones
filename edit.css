@@ -1,0 +1,76 @@
+.todo{
+    display: grid;
+    grid-template-rows: 65vh  35vh;   
+    border: 1px solid;
+}
+
+.cielo{
+    height: 100%;
+    background-color: paleturquoise;
+    /* position: relative; */
+
+}
+.pasto{
+    height: 100%;
+    background-color: green;
+}
+.arbol{
+    position: absolute;
+    width: 20vw;
+    bottom: 16.5vw;
+    
+}
+.casa{
+    position: absolute;
+    width: 20vw;
+    bottom: 16vw;
+    right: 8vw;
+}
+.sol{
+    animation-name: sol;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-delay: 18s;
+    width: 20vw;
+    right: 8vw;
+}
+.nube{
+    margin-left: 100%;
+    position: absolute;
+    width:30vw;
+    animation-name: nube;
+    animation-duration: 20s;
+
+}
+
+@keyframes nube{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: -1200px;
+    }
+    70%{
+        left: -1200px;
+    }
+    100%{
+        left: -2400px;
+    }
+
+
+}
+@keyframes sol{
+    0%{
+        opacity: 100%;
+
+    }
+    50%{
+        opacity: 50%;
+
+    }
+    100%{
+        opacity: 0%;
+    }
+
+}
